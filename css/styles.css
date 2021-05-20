@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Lato,
+    Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -15,8 +16,11 @@
 .header .logo {
   margin-bottom: 10px;
 }
+.text-title {
+  font-family: Linux Libertine, Georgia, Times, serif;
+}
 
-.main{
+.main {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,8 +32,8 @@
   width: 100%;
 }
 
-
-.language-left, .language-right {
+.language-left,
+.language-right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +43,10 @@
   margin: 10px 0;
   cursor: pointer;
 }
+.language-right {
+  padding-left: 0px;
+}
+
 .language-left:first-child {
   margin-left: 60%;
 }
@@ -55,7 +63,8 @@
   margin-left: 60%;
 }
 
-.language-left:hover, .language-right:hover{
+.language-left:hover,
+.language-right:hover {
   background: #eaecf0;
 }
 
@@ -74,7 +83,6 @@
 .language-right:nth-child(5) {
   /* margin-right: 50%; */
 }
-
 
 .languages-link {
   font-weight: bold;
@@ -120,7 +128,7 @@
   padding: 0 15px;
   outline: none;
 }
-.btn-search{
+.btn-search {
   width: 60px;
   background: #36c;
   color: #ffffff;
@@ -144,11 +152,89 @@
   border-radius: 2px;
   padding: 2px;
   cursor: pointer;
+  width: 40px;
 }
-.select-languages select:hover { 
+.select-languages select:hover {
   background: #f2f3f5;
   outline: none;
 }
 .select-languages select:focus {
   outline: none;
 }
+
+.read-options {
+  height: 36px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a2a9b1;
+  padding: 0 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.read-options button {
+  height: inherit;
+  color: #36c;
+  background: transparent;
+  outline: none;
+  border: none;
+  margin: 0 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.read-options:focus {
+  border-color: #36c;
+}
+
+.line {
+  border-top: 1px solid #a2a9b1;
+  width: 100px;
+}
+
+.read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.associate {
+  margin-bottom: 100px;
+  display: flex;
+}
+.big-associate {
+  width: 30%;
+}
+.option {
+  display: flex;
+}
+.option-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.option.bgray {
+  background: #a2a9b1;
+}
+.others-associate {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.others-associate .option {
+  display: flex;
+}
+
+.others-associate .option img{
+  width: 40px;
+ }
+
+ .others-associate .option > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10px;
+ }
